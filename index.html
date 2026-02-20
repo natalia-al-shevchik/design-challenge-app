@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="UX/UI Design Challenge Generator" />
+    <title>Design Challenge Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <script
+      src="https://kit.fontawesome.com/0b931f4725.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+</html>
+
+<body>
+  <header class="header"></header>
+  <main class="site-width">
+    <!-- Spinning Wheel - Always visible -->
+    <section class="hero">
+      <h1>Ready for your next challenge?</h1>
+
+      <div class="challenge-grid">
+        <button class="spin">Spin!</button>
+
+        <button class="challenge-node" data-challenge="ecommerce">
+          <span class="node-content">
+            <img
+              src="images/ecommerce.svg"
+              alt="E-Commerce"
+              class="category-icon"
+            />
+            <span class="category-label">E-Commerce</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="wellness">
+          <span class="node-content">
+            <img
+              src="images/wellness.svg"
+              alt="Wellness"
+              class="category-icon"
+            />
+            <span class="category-label">Wellness</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="productivity">
+          <span class="node-content">
+            <img
+              src="images/productivity.svg"
+              alt="Productivity"
+              class="category-icon"
+            />
+            <span class="category-label">Productivity</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="food-and-lifestyle">
+          <span class="node-content">
+            <img
+              src="images/food-and-lifestyle.svg"
+              alt="Food & Lifestyle"
+              class="category-icon"
+            />
+            <span class="category-label">Food & Lifestyle</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="finance">
+          <span class="node-content">
+            <img src="images/finance.svg" alt="Finance" class="category-icon" />
+            <span class="category-label">Finance</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="travel">
+          <span class="node-content">
+            <img src="images/travel.svg" alt="Travel" class="category-icon" />
+            <span class="category-label">Travel</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="health">
+          <span class="node-content">
+            <img src="images/health.svg" alt="Health" class="category-icon" />
+            <span class="category-label">Health</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="social">
+          <span class="node-content">
+            <img src="images/social.svg" alt="Social" class="category-icon" />
+            <span class="category-label">Social</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="education">
+          <span class="node-content">
+            <img
+              src="images/education.svg"
+              alt="Education"
+              class="category-icon"
+            />
+            <span class="category-label">Education</span>
+          </span>
+        </button>
+
+        <button class="challenge-node" data-challenge="utility">
+          <span class="node-content">
+            <img src="images/utility.svg" alt="Utility" class="category-icon" />
+            <span class="category-label">Utility</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Challenge Details -->
+    <section class="challenge-details">
+      <!-- E-Commerce Challenge -->
+      <div class="challenge hidden" id="challenge-ecommerce">
+        <span class="challenge-category">E-Commerce</span>
+        <h2 class="challenge-title">The Product Card</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a product card for a sustainable fashion brand. Focus on
+            hierarchy: what does the user need to see first, second, third?
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply Gestalt's Law of Proximity — group related elements (price,
+              name, rating) so the eye reads them as a unit, not as isolated
+              pieces.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design a product detail page that this card leads to. The user has
+              clicked because they're interested — now earn their trust and
+              guide them toward a decision.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #6: Recognition over Recall — make
+                size guides, return policies, and material info visible without
+                the user having to dig for it.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the shopping cart screen after the user adds the item. This
+              is a moment of commitment — make it feel reassuring, not
+              anxiety-inducing.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #1: Visibility of System Status —
+                clearly confirm what was added, show the updated total, and make
+                the path to checkout obvious.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Wellness Challenge -->
+      <div class="challenge hidden" id="challenge-wellness">
+        <span class="challenge-category">Wellness</span>
+        <h2 class="challenge-title">The Meditation Timer</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a meditation timer screen for a mindfulness app. The
+            interface should feel as calm as the activity itself — strip away
+            everything unnecessary.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply the principle of Visual Breathing — generous white space
+              isn't emptiness, it's intentional calm. Let the layout reflect the
+              purpose.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the session completion screen shown after the timer ends.
+              This is a small but meaningful moment — the user just did
+              something good for themselves.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the Peak-End Rule — users remember the best moment and the
+                ending. Make this ending feel rewarding and warm, not clinical.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the session history screen where users can see their past
+              practice. Progress should feel encouraging, not like a report
+              card.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Gestalt's Law of Continuity — use visual flow (a timeline,
+                a gentle graph) to suggest ongoing progress rather than isolated
+                data points.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Productivity Challenge -->
+      <div class="challenge hidden" id="challenge-productivity">
+        <span class="challenge-category">Productivity</span>
+        <h2 class="challenge-title">The Task Card</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a task card for a project management tool used by small
+            creative teams. One card, all the essential info — make it scannable
+            in under 3 seconds.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply the Inverted Pyramid principle — lead with the most critical
+              information (task name, status, deadline) and let secondary
+              details follow.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the task detail screen that opens when the card is tapped.
+              The user needs full context to act — give them everything without
+              overwhelming them.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #8: Aesthetic and Minimalist Design —
+                every element on this screen should earn its place. If it
+                doesn't help the user act, remove it.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the project overview screen that contains multiple task
+              cards. This is the bird's eye view — help the user understand the
+              health of the whole project at a glance.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Gestalt's Law of Similarity — use consistent visual
+                treatment (color, shape, size) to group tasks by status so
+                patterns emerge instantly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Food & Lifestyle Challenge -->
+      <div class="challenge hidden" id="challenge-food-and-lifestyle">
+        <span class="challenge-category">Food & Lifestyle</span>
+        <h2 class="challenge-title">The Recipe Card</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a recipe card for a meal planning app targeting busy parents.
+            Quick to scan, easy to decide — yes or no in seconds.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply the F-Pattern Reading principle — place the most
+              decision-influencing content (image, time, difficulty) along the
+              natural scan path.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the full recipe screen once the user selects a meal.
+              They're about to cook — anticipate what they'll need and when
+              they'll need it.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #7: Flexibility and Efficiency —
+                consider both the first-time cook (needs full instructions) and
+                the experienced one (just needs a quick ingredient check).
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the weekly meal planner screen where this recipe has been
+              added. Help the user see their whole week without feeling
+              overwhelmed by it.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Gestalt's Law of Prägnanz (Good Form) — the brain prefers
+                simplicity. Design the week view so it reads as one coherent,
+                organized whole rather than 7 separate days.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Finance Challenge -->
+      <div class="challenge hidden" id="challenge-finance">
+        <span class="challenge-category">Finance</span>
+        <h2 class="challenge-title">The Expense Entry</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design an expense entry screen for a personal budgeting app. Adding
+            an expense should take no more than 10 seconds — remove every
+            unnecessary tap.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply Nielsen's Heuristic #4: Consistency and Standards — use
+              familiar input patterns (amount first, then category) so users
+              don't have to relearn the flow each time.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the category selection screen or component triggered during
+              entry. Categories should be immediately recognizable — no guessing
+              where "coffee" belongs.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Gestalt's Law of Common Region — visually enclose related
+                categories (Food & Drink, Transport, Health) so groupings feel
+                intuitive rather than arbitrary.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the monthly spending overview screen. The user wants to
+              understand their habits — show them patterns, not just numbers.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the principle of Data-Ink Ratio (Edward Tufte) — every
+                visual element should represent data. Remove decorative chart
+                elements that add noise without adding meaning.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Travel Challenge -->
+      <div class="challenge hidden" id="challenge-travel">
+        <span class="challenge-category">Travel</span>
+        <h2 class="challenge-title">The Destination Card</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a destination card for a travel inspiration app. Spark
+            wanderlust in a single card — make the user feel something before
+            they read anything.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply the principle of Visual Hierarchy through contrast — a
+              strong image paired with minimal, well-placed type creates more
+              impact than a card crowded with information.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the destination detail screen this card leads to. The user
+              is dreaming — help them go from inspiration to "I want to book
+              this."
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #6: Recognition over Recall — surface
+                key facts (best season, average cost, visa requirements) without
+                making the user search for them.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the trip planning screen where the user starts building
+              their itinerary. The blank slate is intimidating — give them a
+              starting point that feels manageable.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the principle of Progressive Disclosure — show only what's
+                needed to take the first step. Reveal complexity gradually as
+                the user builds confidence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Health Challenge -->
+      <div class="challenge hidden" id="challenge-health">
+        <span class="challenge-category">Health</span>
+        <h2 class="challenge-title">The Symptom Checker</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a symptom input screen for a healthcare app. Users arrive
+            here worried — the interface must feel calm, clear, and trustworthy.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply Nielsen's Heuristic #5: Error Prevention — use clear input
+              options (selectable symptoms rather than free text) to reduce user
+              error and anxiety simultaneously.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the results screen showing possible conditions based on
+              entered symptoms. This is sensitive information — present it
+              honestly without causing unnecessary panic.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the principle of Tone through Typography — font weight,
+                size, and spacing can make the same information feel alarming or
+                reassuring. Choose deliberately.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the "find a doctor" screen that follows the results. The
+              user needs to act — make the path from concern to appointment as
+              frictionless as possible.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #3: User Control and Freedom — give
+                users options (book now, save for later, get more info) so they
+                feel in control of a moment that may feel out of control.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Social Challenge -->
+      <div class="challenge hidden" id="challenge-social">
+        <span class="challenge-category">Social</span>
+        <h2 class="challenge-title">The User Profile</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a user profile card for a design community platform. In one
+            glance, a visitor should understand who this person is and whether
+            to connect.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply Gestalt's Law of Figure/Ground — make the profile subject
+              (photo, name, role) stand out clearly from the background and
+              supporting details.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the full profile page this card expands into. The user is
+              being evaluated by potential collaborators or employers — help
+              them tell their story.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the principle of Visual Narrative — guide the viewer's eye
+                through a deliberate sequence: who they are → what they do →
+                proof of their work → how to connect.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the connection or collaboration request screen triggered
+              from the profile. A small but high-stakes interaction — make it
+              personal, not transactional.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #2: Match Between System and the Real
+                World — use language and metaphors that feel human ("Let's
+                connect") rather than technical ("Send request").
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Education Challenge -->
+      <div class="challenge hidden" id="challenge-education">
+        <span class="challenge-category">Education</span>
+        <h2 class="challenge-title">The Course Card</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design a course card for an online learning platform targeting adult
+            learners. Adults are time-conscious and skeptical — give them what
+            they need to decide in seconds.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply the principle of Affordance — visual cues (progress bar,
+              duration badge, level indicator) should immediately communicate
+              what kind of commitment this course requires.
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the course overview screen the card leads to. The user is
+              considering enrolling — address their hesitations before they
+              voice them.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply Nielsen's Heuristic #6: Recognition over Recall — make the
+                syllabus, instructor credentials, and time commitment visible
+                upfront. Don't make users hunt for deal-breakers.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the first lesson screen once the user enrolls. First
+              impressions set the tone for the entire learning journey — make
+              this feel welcoming and structured.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the principle of Onboarding through Context — orient the
+                learner: where are they in the course, what will they achieve
+                today, and what comes next.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+
+      <!-- Utility Challenge -->
+      <div class="challenge hidden" id="challenge-utility">
+        <span class="challenge-category">Utility</span>
+        <h2 class="challenge-title">The Onboarding Flow</h2>
+
+        <div class="step">
+          <h3>Step 1</h3>
+          <p class="prompt">
+            Design the first onboarding screen for a habit-building app. You
+            have one screen to convince someone to keep going — make every word
+            and pixel count.
+          </p>
+          <button class="hint-toggle" aria-label="Show hint">
+            <img src="images/info.svg" alt="" class="info-icon" />
+          </button>
+          <div class="hint hidden">
+            <button class="hint-close" aria-label="Close hint">
+              <img src="images/close.svg" alt="" class="close-icon" />
+            </button>
+            <p>
+              Apply the principle of Value-First Onboarding — lead with what the
+              user gains, not what you need from them (permissions, sign-ups,
+              personal data).
+            </p>
+          </div>
+        </div>
+
+        <div class="additional-steps hidden">
+          <div class="step">
+            <h3>Step 2</h3>
+            <p class="prompt">
+              Design the personalization step mid-onboarding where the user sets
+              their first goal. This is the moment of investment — the user is
+              telling you what they care about.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the principle of Commitment and Consistency (Cialdini) —
+                small, voluntary choices early in an onboarding flow increase
+                the likelihood of long-term engagement.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Step 3</h3>
+            <p class="prompt">
+              Design the "you're all set" completion screen at the end of
+              onboarding. The user has made it through — celebrate that without
+              being over the top.
+            </p>
+            <button class="hint-toggle" aria-label="Show hint">
+              <img src="images/info.svg" alt="" class="info-icon" />
+            </button>
+            <div class="hint hidden">
+              <button class="hint-close" aria-label="Close hint">
+                <img src="images/close.svg" alt="" class="close-icon" />
+              </button>
+              <p>
+                Apply the Peak-End Rule again — this is the end of the
+                onboarding experience. Make it feel like a beginning, not a
+                finish line.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="expand-btn">
+          <span>Show more steps</span>
+          <img src="images/arrow.svg" alt="" class="arrow-icon" />
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-about">
+        Built by a designer who loves a good challenge. Working on something
+        similar? Let's chat!
+      </p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/natalia-shevchik/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <img src="images/linkedin.svg" alt="" />
+        </a>
+        <a
+          href="https://www.behance.net/nataliashevchik_uxui"
+          target="_blank"
+          rel="noopener"
+          aria-label="Behance"
+        >
+          <img src="images/behance.svg" alt="" />
+        </a>
+        <a
+          href="https://dribbble.com/Natalia_Shevchik"
+          target="_blank"
+          rel="noopener"
+          aria-label="Dribbble"
+        >
+          <img src="images/dribbble.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="footer-legal">
+        <a href="./impressum.html">Impressum</a>
+        <span class="copyright">Copyright 2026 Natalia Shevchik</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
