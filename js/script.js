@@ -119,8 +119,8 @@ spinButton.addEventListener('click', function() {
   
   let currentIndex = 0;
   let cycleCount = 0;
-  const totalCycles = 3; // Go around the circle 3 times
-  const speed = 150; // milliseconds between highlights
+  const totalCycles = 2; // Go around the circle 2 times
+  const speed = 100; // milliseconds between highlights
   
   // Cycling function
   const cycleInterval = setInterval(() => {
