@@ -103,7 +103,7 @@ main {
     padding: var(--spacing-xl) 0;
 }
 
-.hero h1 {
+.hero h1, .hero h2 {
     margin-bottom: var(--spacing-xl);
 }
 
